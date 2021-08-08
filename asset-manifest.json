@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Donnastjames/React-Portfolio/static/css/main.a617e044.chunk.css",
+    "main.js": "/Donnastjames/React-Portfolio/static/js/main.f24a4688.chunk.js",
+    "main.js.map": "/Donnastjames/React-Portfolio/static/js/main.f24a4688.chunk.js.map",
+    "runtime-main.js": "/Donnastjames/React-Portfolio/static/js/runtime-main.d67665f3.js",
+    "runtime-main.js.map": "/Donnastjames/React-Portfolio/static/js/runtime-main.d67665f3.js.map",
+    "static/js/2.bbe6fa78.chunk.js": "/Donnastjames/React-Portfolio/static/js/2.bbe6fa78.chunk.js",
+    "static/js/2.bbe6fa78.chunk.js.map": "/Donnastjames/React-Portfolio/static/js/2.bbe6fa78.chunk.js.map",
+    "static/js/3.52b6033b.chunk.js": "/Donnastjames/React-Portfolio/static/js/3.52b6033b.chunk.js",
+    "static/js/3.52b6033b.chunk.js.map": "/Donnastjames/React-Portfolio/static/js/3.52b6033b.chunk.js.map",
+    "index.html": "/Donnastjames/React-Portfolio/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/Donnastjames/React-Portfolio/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.bbe6fa78.chunk.js.LICENSE.txt": "/Donnastjames/React-Portfolio/static/js/2.bbe6fa78.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/Donnastjames/React-Portfolio/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d67665f3.js",
+    "static/js/2.bbe6fa78.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.f24a4688.chunk.js"
+  ]
+}
