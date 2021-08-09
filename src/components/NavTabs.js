@@ -6,7 +6,7 @@ import '../styles/NavTabs.css';
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     
-    <ul className="nav nav-tabs navbar">
+    <ul className="nav nav-tabs navbar navHeader">
       <li>
         <h1 className="fontStyle">Donna Crawford</h1>
       </li>
