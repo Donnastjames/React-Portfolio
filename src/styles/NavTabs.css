@@ -2,6 +2,7 @@
   background: darkslategrey;
   height: 150px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 30px;
 }
 
 .navbar a {
@@ -15,4 +16,9 @@
 .fontStyle {
   color: aliceblue;
   justify-content: flex-end;
+  padding: 30px;
+}
+
+.push {
+  margin-left: auto;
 }

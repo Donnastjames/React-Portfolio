@@ -7,8 +7,10 @@ function NavTabs({ currentPage, handlePageChange }) {
   return (
     
     <ul className="nav nav-tabs navbar">
-      <h1 className="fontStyle">Donna Crawford</h1>
-      <li className="nav-item">
+      <li>
+        <h1 className="fontStyle">Donna Crawford</h1>
+      </li>
+      <li className="nav-item push">
         <a
           href="#aboutMe"
           onClick={() => handlePageChange('AboutMe')}
