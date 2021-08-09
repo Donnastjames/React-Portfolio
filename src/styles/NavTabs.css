@@ -1,0 +1,18 @@
+.navbar {
+  background: darkslategrey;
+  height: 150px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar a {
+  color: white;
+  font-size: 1.3rem;
+  /* text-decoration: none;
+  margin: 5px;
+  line-height: 3; */
+}
+
+.fontStyle {
+  color: aliceblue;
+  justify-content: flex-end;
+}
