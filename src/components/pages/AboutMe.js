@@ -1,4 +1,5 @@
 import React from 'react';
+import myPhoto from '../../assets/my-photo.jpeg';
 
 const styles = {
   sectionStyles: {
@@ -8,12 +9,17 @@ const styles = {
   paragraphStyle: {
     fontSize: '20px',
   },
+  photoStyle: {
+    width: '142px',
+    height: '167px',
+  },
 };
 
 export default function AboutMe() {
   return (
     <div style={styles.sectionStyles}>
       <h1>About Me</h1>
+      <img style={styles.photoStyle} src={myPhoto} alt="My Photo" />
       <p style={styles.paragraphStyle}>
         I grew up in California where I studied and received an associates degree in Economics.  I enjoyed working professionally as a Claims Auditor, and eventually as a Business Systems Analyst at Regence Blue Shield.  I got married and took care of my son, my pride and joy.  As my son grows more independent, I have more time to study and get back into the workforce.
       </p>
