@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <div>
+    <div style={{ position: 'fixed', top: '165px', height: '340px', overflow: 'auto' }}>
       <h1>Contact Page</h1>
       <p>
         Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
