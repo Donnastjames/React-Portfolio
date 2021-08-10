@@ -21,10 +21,20 @@ export default function Portfolio() {
             />
           </Col>
           <Col>
-            <Project title="Kids Corner" imagePath="" altImage= "" linkPath="https://github.com/Donnastjames/Project-1" />
+            <Project
+              title="Kids Corner"
+              imageSrc={kidsCornerImage}
+              altImage="Kids Corner"
+              linkPath="https://github.com/Donnastjames/Project-1"
+            />
           </Col>
           <Col>
-            <Project title="Kids Corner" imagePath="" altImage= "" linkPath="https://github.com/Donnastjames/Project-1" />
+            <Project
+              title="Kids Corner"
+              imageSrc={kidsCornerImage}
+              altImage="Kids Corner"
+              linkPath="https://github.com/Donnastjames/Project-1"
+            />
           </Col>
         </Row>
 
