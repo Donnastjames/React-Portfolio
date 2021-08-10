@@ -1,12 +1,10 @@
 import React, { Fragment } from 'react';
-import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Project from '../Project';
 import '../../styles/Portfolio.css';
-
+import kidsCornerImage from '../../assets/KidsCornerProject.png';
 
 export default function Portfolio() {
   return (
@@ -15,86 +13,34 @@ export default function Portfolio() {
         <h1>Portfolio</h1>
         <Row xs={1} med={2} lg={3}>
           <Col>
-            <Card style={{ width: '22rem' }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
+            <Project
+              title="Kids Corner"
+              imageSrc={kidsCornerImage}
+              altImage="Kids Corner"
+              linkPath="https://github.com/Donnastjames/Project-1"
+            />
           </Col>
           <Col>
-            <Card style={{ width: '22rem' }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
+            <Project title="Kids Corner" imagePath="" altImage= "" linkPath="https://github.com/Donnastjames/Project-1" />
           </Col>
           <Col>
-            <Card style={{ width: '22rem' }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
+            <Project title="Kids Corner" imagePath="" altImage= "" linkPath="https://github.com/Donnastjames/Project-1" />
           </Col>
         </Row>
+
         <Row xs={1} med={2} lg={3}>
           <Col>
-            <Card style={{ width: '22rem' }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
+            <Project title="Kids Corner" imagePath="" altImage= "" linkPath="https://github.com/Donnastjames/Project-1" />
           </Col>
           <Col>
-            <Card style={{ width: '22rem' }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
+            <Project title="Kids Corner" imagePath="" altImage= "" linkPath="https://github.com/Donnastjames/Project-1" />
           </Col>
           <Col>
-            <Card style={{ width: '22rem' }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
+            <Project title="Kids Corner" imagePath="" altImage= "" linkPath="https://github.com/Donnastjames/Project-1" />
           </Col>
         </Row>
+
+        
       </Container>
     </Fragment>
 
