@@ -17,7 +17,8 @@ const styles = {
 
 export default function AboutMe() {
   return (
-    <div style={{ position: 'fixed', top: '165px', height: '386px', overflow: 'scroll' }}>
+    <div style={{ position: 'fixed', top: '165px', height: '340px', overflow: 'auto' }}>
+      
       <div style={styles.sectionStyles}>
         <h1>About Me</h1>
         <img style={styles.photoStyle} src={myPhoto} alt="My Photo" />
