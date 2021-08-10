@@ -5,7 +5,6 @@ import '../styles/NavTabs.css';
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    
     <ul className="nav nav-tabs navbar navHeader">
       <li>
         <h1 className="fontStyle">Donna Crawford</h1>
@@ -16,6 +15,8 @@ function NavTabs({ currentPage, handlePageChange }) {
           onClick={() => handlePageChange('AboutMe')}
           // Check to see if the currentPage is `AboutMe`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
           className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}
+
+          style={{ whiteSpace: 'nowrap' }}
         >
           About Me
         </a>
