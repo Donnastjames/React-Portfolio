@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import myPhoto from '../../assets/my-photo.jpeg';
 
 const styles = {
@@ -16,9 +16,25 @@ const styles = {
 };
 
 export default function AboutMe() {
+  
+  // https://stackoverflow.com/questions/66588340/custom-hook-for-window-resize
+  let [windowHeight, setHeight] = useState(window.innerHeight);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    window.addEventListener('resize', () => { setHeight(window.innerHeight) });
+
+    return () => {
+      window.removeEventListener('resize', () => {
+        setHeight(window.innerHeight);
+      });
+    };
+  }, [windowHeight]);
+
+  console.log('windowHeight:', windowHeight);
+
   return (
-    <div style={{ position: 'fixed', top: '165px', height: '340px', overflow: 'auto' }}>
-      
+    <div ref={ref} style={{ position: 'fixed', top: '170px', height: `${windowHeight - 235}px`, overflow: 'auto' }}>
       <div style={styles.sectionStyles}>
         <h1>About Me</h1>
         <img style={styles.photoStyle} src={myPhoto} alt="My Photo" />
