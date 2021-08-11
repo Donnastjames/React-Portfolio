@@ -18,7 +18,7 @@ const styles = {
 export default function AboutMe() {
   
   // https://stackoverflow.com/questions/66588340/custom-hook-for-window-resize
-  let [windowHeight, setHeight] = useState(window.innerHeight);
+  const [windowHeight, setHeight] = useState(window.innerHeight);
   const ref = useRef(null);
 
   useEffect(() => {
@@ -29,9 +29,7 @@ export default function AboutMe() {
         setHeight(window.innerHeight);
       });
     };
-  }, [windowHeight]);
-
-  console.log('windowHeight:', windowHeight);
+  }, [window.innerHeight]);
 
   return (
     <div ref={ref} style={{ position: 'fixed', top: '170px', height: `${windowHeight - 235}px`, overflow: 'auto' }}>
