@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Container from 'react-bootstrap/Container';
 import '../../styles/ContactForm.css';
 
@@ -20,8 +20,21 @@ function ContactForm() {
   const [userName, setUserName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-
   const [errorMessage, setErrorMessage] = useState('');
+
+  // https://stackoverflow.com/questions/66588340/custom-hook-for-window-resize
+  const [windowHeight, setHeight] = useState(window.innerHeight);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    window.addEventListener('resize', () => { setHeight(window.innerHeight) });
+
+    return () => {
+      window.removeEventListener('resize', () => {
+        setHeight(window.innerHeight);
+      });
+    };
+  }, [window.innerHeight]);
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -76,10 +89,11 @@ function ContactForm() {
   return (
     <Container>
       <div
+        ref={ref}
         style={{
           position: 'fixed',
           top: '200px',
-          height: '340px',
+          height: `${windowHeight - 235}px`,
           overflow: 'auto'
         }}
       >
