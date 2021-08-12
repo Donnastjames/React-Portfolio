@@ -1,8 +1,18 @@
 import React, { useState } from 'react';
+import Container from 'react-bootstrap/Container';
 import '../../styles/ContactForm.css';
 
 // Here we import a helper function that will check if the email is valid
 import { validateEmail } from '../../utils/helpers';
+
+const styles = {
+  sectionStyles: {
+    fontFamily: 'Georgia, Times New Roman, Times, serif',
+  },
+  paragraphStyle: {
+    fontSize: '20px',
+  },
+};
 
 function ContactForm() {
   // Create state variables for the fields in the form
@@ -63,48 +73,58 @@ function ContactForm() {
   };
 
   return (
-    <div style={{ position: 'fixed', top: '165px', height: '340px', overflow: 'auto' }}>
-      <h3>Contact</h3>
-      <form className="form">
-        <label>
-          Name:
-          <input
-            value={userName}
-            name="userName"
-            onChange={handleInputChange}
-            type="text"
-          />
-        </label>
-        <br />
-        <label>
-          Email:
-          <input
-            value={email}
-            name="email"
-            onChange={handleInputChange}
-            type="email"
-          />
-        </label>
-        <br />
-        <label>
-          Message:
+    <Container>
+      <div
+        style={{
+          position: 'fixed',
+          top: '200px',
+          height: '340px',
+          overflow: 'auto'
+        }}
+      >
+        <h3 style={styles.sectionStyles}>Contact</h3>
+        <form style={styles.sectionStyles} className="form">
+          <label>
+            Name:
+            <input
+              value={userName}
+              name="userName"
+              onChange={handleInputChange}
+              type="text"
+            />
+          </label>
           <br />
-          <textarea
-            value={message}
-            name="message"
-            onChange={handleInputChange}
-            type="text"
-          />
-        </label>
-        <br />
+          <label>
+            Email:
+            <input
+              value={email}
+              name="email"
+              onChange={handleInputChange}
+              type="email"
+            />
+          </label>
+          <br />
+          <label>
+            Message:
+            <br />
+            <textarea
+              value={message}
+              name="message"
+              onChange={handleInputChange}
+              type="text"
+              style={{rows:'10', width:'inherit'}}
+            />
+          </label>
+          <br />
           <button type="button" onClick={handleFormSubmit}>Submit</button>
-      </form>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
-    </div>
+        </form>
+        {errorMessage && (
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
+      </div>
+    </Container>
   );
 }
 
