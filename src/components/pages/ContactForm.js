@@ -105,7 +105,7 @@ function ContactForm() {
           position: 'fixed',
           top: '200px',
           left: '30px',
-          width: `${windowWidth}px`,
+          width: `${windowWidth - 45}px`,
           height: `${windowHeight - 235}px`,
           overflow: 'auto'
         }}
