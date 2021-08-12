@@ -70,6 +70,7 @@ function ContactForm() {
     setUserName('');
     setEmail('');
     setMessage('');
+    setErrorMessage('');
   };
 
   return (
@@ -113,6 +114,9 @@ function ContactForm() {
               onChange={handleInputChange}
               type="text"
               style={{rows:'10', width:'inherit'}}
+              onBlur={() => setErrorMessage(
+                message ? '' : 'Message is required'
+              )}
             />
           </label>
           <br />
