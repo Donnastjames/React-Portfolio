@@ -4,12 +4,13 @@
   left: 0;
   right: 0;
   background: darkslategrey;
+  width: 100%;
   height: 170px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 30px;
   display: contents;
   flex-wrap: nowrap !important;
-  width: 100%;
+  overflow: auto;
 }
 
 .navHeader a {
