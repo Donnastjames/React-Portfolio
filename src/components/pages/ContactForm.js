@@ -24,6 +24,7 @@ function ContactForm() {
 
   // https://stackoverflow.com/questions/66588340/custom-hook-for-window-resize
   const [windowHeight, setHeight] = useState(window.innerHeight);
+  const [windowWidth, setWidth] = useState(window.innerWidth);
   const ref = useRef(null);
 
   useEffect(() => {
@@ -35,6 +36,16 @@ function ContactForm() {
       });
     };
   }, [window.innerHeight]);
+
+  useEffect(() => {
+    window.addEventListener('resize', () => { setWidth(window.innerWidth) });
+
+    return () => {
+      window.removeEventListener('resize', () => {
+        setWidth(window.innerWidth);
+      });
+    };
+  }, [window.innerWidth]);
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -93,13 +104,19 @@ function ContactForm() {
         style={{
           position: 'fixed',
           top: '200px',
+          left: '30px',
+          width: `${windowWidth}px`,
           height: `${windowHeight - 235}px`,
           overflow: 'auto'
         }}
       >
         <h3 style={styles.sectionStyles}>Contact</h3>
-        <form style={styles.sectionStyles} className="form">
-          <label>
+        <form
+          style={{ ...styles.sectionStyles, width: `${windowWidth}px` }}
+          className="form"
+          
+        >
+          <label style={{ width: `${windowWidth - 100}px` }}>
             Name:
             <input
               value={userName}
@@ -109,7 +126,7 @@ function ContactForm() {
             />
           </label>
           <br />
-          <label>
+          <label style={{ width: `${windowWidth - 100}px` }}>
             Email:
             <input
               value={email}
@@ -119,7 +136,7 @@ function ContactForm() {
             />
           </label>
           <br />
-          <label>
+          <label style={{ width: `${windowWidth - 100}px` }}>
             Message:
             <br />
             <textarea
@@ -127,7 +144,7 @@ function ContactForm() {
               name="message"
               onChange={handleInputChange}
               type="text"
-              style={{rows:'10', width:'inherit'}}
+              style={{ rows: '10', width: 'inherit' }}
               onBlur={() => setErrorMessage(
                 message ? '' : 'Message is required'
               )}
