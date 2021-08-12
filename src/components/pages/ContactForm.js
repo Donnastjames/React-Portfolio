@@ -21,9 +21,9 @@ function ContactForm() {
 
     // Based on the input type, we set the state of either email, username, and password
     if (inputType === 'userName') {
-      setEmail(inputValue);
-    } else if (inputType === 'email') {
       setUserName(inputValue);
+    } else if (inputType === 'email') {
+      setEmail(inputValue);
     } else {
       setMessage(inputValue);
     }
@@ -66,27 +66,37 @@ function ContactForm() {
     <div style={{ position: 'fixed', top: '165px', height: '340px', overflow: 'auto' }}>
       <h3>Contact</h3>
       <form className="form">
-        <h3>Name</h3>
+        <label>
+          Name:
           <input
             value={userName}
             name="userName"
             onChange={handleInputChange}
             type="text"
           />
-        <h3>Email address:</h3>
+        </label>
+        <br />
+        <label>
+          Email:
           <input
             value={email}
             name="email"
             onChange={handleInputChange}
             type="email"
           />
-        <h3>Message:</h3>
-          <input
+        </label>
+        <br />
+        <label>
+          Message:
+          <br />
+          <textarea
             value={message}
             name="message"
             onChange={handleInputChange}
             type="text"
           />
+        </label>
+        <br />
           <button type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
       {errorMessage && (
