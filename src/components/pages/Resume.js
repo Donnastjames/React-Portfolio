@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import myResume from "../../assets/DCrawford_Resume.pdf";
 
 const styles = {
   sectionStyles: {
@@ -21,11 +22,22 @@ export default function Resume() {
         left: '30px',
         width: `${windowWidth - 45}px`,
         height: `${windowHeight - 300}px`, 
-        overflow: 'auto' 
+        overflow: 'auto'
       }}
     >
       <h1 style={styles.sectionStyles}>Resume</h1>
-        <h4 style={styles.sectionStyles}>Download my resume</h4>
+        <p style={styles.sectionStyles}>
+          Download my resume&nbsp;
+          <a 
+            href={myResume} 
+            download='myResume' 
+            target='_blank'
+            rel='noopener noreferrer'
+            textDecoration='none'
+          >
+            here
+          </a>.
+        </p>
         <h3 style={styles.sectionStyles}>Front-end Proficiencies</h3> 
             <ul style={styles.sectionStyles}>
               <li>HTML</li>
