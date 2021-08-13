@@ -5,6 +5,9 @@ const styles = {
   sectionStyles: {
     fontFamily: 'Georgia, Times New Roman, Times, serif',
   },
+  fontStyles: {
+    fontSize: '20px',
+  },
 };
 
 export default function Resume() {
@@ -12,6 +15,26 @@ export default function Resume() {
   const [windowHeight, setHeight] = useState(window.innerHeight);
   const [windowWidth, setWidth] = useState(window.innerWidth);
   const ref = useRef(null);
+
+  useEffect(() => {
+    window.addEventListener('resize', () => { setHeight(window.innerHeight) });
+
+    return () => {
+      window.removeEventListener('resize', () => {
+        setHeight(window.innerHeight);
+      });
+    };
+  }, [window.innerHeight]);
+
+  useEffect(() => {
+    window.addEventListener('resize', () => { setWidth(window.innerWidth) });
+
+    return () => {
+      window.removeEventListener('resize', () => {
+        setWidth(window.innerWidth);
+      });
+    };
+  }, [window.innerWidth]);
 
   return (
     <div 
@@ -26,7 +49,7 @@ export default function Resume() {
       }}
     >
       <h1 style={styles.sectionStyles}>Resume</h1>
-        <p style={styles.sectionStyles}>
+        <h5 style={styles.sectionStyles}>
           Download my resume&nbsp;
           <a 
             href={myResume} 
@@ -37,9 +60,11 @@ export default function Resume() {
           >
             here
           </a>.
-        </p>
+        </h5>
+
+        <br />
         <h3 style={styles.sectionStyles}>Front-end Proficiencies</h3> 
-            <ul style={styles.sectionStyles}>
+            <ul style={{...styles.sectionStyles,...styles.fontStyles}}>
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
@@ -50,8 +75,7 @@ export default function Resume() {
               <li>Handlebars</li>
             </ul>
           <h3 style={styles.sectionStyles}>Back-end Proficiencies</h3>
-            <ul style={styles.sectionStyles}>
-              <li>APIs</li>
+            <ul style={{...styles.sectionStyles,...styles.fontStyles}}>
               <li>Node</li>
               <li>Express</li>
               <li>MySQL, Sequelize</li>
