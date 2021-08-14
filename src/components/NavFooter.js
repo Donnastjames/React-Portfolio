@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/NavTabs.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function NavFooter({ currentPage, handlePageChange }) {
   return (
@@ -11,7 +12,7 @@ function NavFooter({ currentPage, handlePageChange }) {
           rel="noopener noreferrer"
           alt="github"
         >
-          Github
+          <FontAwesomeIcon icon={['fab', 'github']} />
         </a>
       </li>
       <li className='nav-item'>
