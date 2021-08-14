@@ -6,20 +6,32 @@ function NavFooter({ currentPage, handlePageChange }) {
     <ul className='nav nav-tabs navFooter'>
       <li className='nav-item'>
         <a
-        href= "https://github.com/Donnastjames" target="_blank" rel="noopener noreferrer" alt="github" >
+          href="https://github.com/Donnastjames"
+          target="_blank"
+          rel="noopener noreferrer"
+          alt="github"
+        >
           Github
         </a>
       </li>
       <li className='nav-item'>
         <a
-        href= "https://www.linkedin.com/in/donna-crawford-943980195/" target="_blank" rel="noopener noreferrer" alt="linkedin" >
+          href="https://www.linkedin.com/in/donna-crawford-943980195/"
+          target="_blank"
+          rel="noopener noreferrer"
+          alt="linkedin"
+        >
           LinkedIn
         </a>
       </li>
       <li className='nav-item'>
         <a
-        href= "mailto:crawford0774@gmail.com" alt="email" >
-          Email
+          href="https://stackoverflow.com/users/16663682/donnajames?tab=profile"
+          target="_blank"
+          rel="noopener noreferrer"
+          alt="stack overflow"
+        >
+          stack overflow
         </a>
       </li>
     </ul>
