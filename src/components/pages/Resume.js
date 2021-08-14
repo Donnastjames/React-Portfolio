@@ -41,7 +41,7 @@ export default function Resume() {
       ref={ref}
       style={{ 
         position: 'fixed', 
-        top: '200px',
+        top: '150px',
         left: '30px',
         width: `${windowWidth - 45}px`,
         height: `${windowHeight - 300}px`, 

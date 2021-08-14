@@ -103,20 +103,20 @@ function ContactForm() {
         ref={ref}
         style={{
           position: 'fixed',
-          top: '200px',
+          top: '160px',
           left: '30px',
           width: `${windowWidth - 45}px`,
           height: `${windowHeight - 235}px`,
           overflow: 'auto'
         }}
       >
-        <h3 style={styles.sectionStyles}>Contact</h3>
+        <h1 style={styles.sectionStyles}>Contact</h1>
         <form
           style={{ ...styles.sectionStyles, width: `${windowWidth}px` }}
           className="form"
           
         >
-          <label style={{ width: `${windowWidth - 100}px` }}>
+          <label style={{ ...styles.paragraphStyle, width: `${windowWidth - 100}px` }}>
             Name:
             <input
               value={userName}
@@ -126,7 +126,7 @@ function ContactForm() {
             />
           </label>
           <br />
-          <label style={{ width: `${windowWidth - 100}px` }}>
+          <label style={{ ...styles.paragraphStyle, width: `${windowWidth - 100}px` }}>
             Email:
             <input
               value={email}
@@ -136,7 +136,7 @@ function ContactForm() {
             />
           </label>
           <br />
-          <label style={{ width: `${windowWidth - 100}px` }}>
+          <label style={{ ...styles.paragraphStyle, width: `${windowWidth - 100}px` }}>
             Message:
             <br />
             <textarea

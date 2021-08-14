@@ -12,9 +12,13 @@ function NavFooter({ currentPage, handlePageChange }) {
           rel="noopener noreferrer"
           alt="github"
         >
-          <FontAwesomeIcon icon={['fab', 'github']} />
+          <FontAwesomeIcon icon={['fab', 'github']} size={'2x'}/>
         </a>
       </li>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      &nbsp;
       <li className='nav-item'>
         <a
           href="https://www.linkedin.com/in/donna-crawford-943980195/"
@@ -22,9 +26,13 @@ function NavFooter({ currentPage, handlePageChange }) {
           rel="noopener noreferrer"
           alt="linkedin"
         >
-          LinkedIn
+          <FontAwesomeIcon icon={['fab', 'linkedin']} size={'2x'}/>
         </a>
       </li>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      &nbsp;
       <li className='nav-item'>
         <a
           href="https://stackoverflow.com/users/16663682/donnajames?tab=profile"
@@ -32,7 +40,7 @@ function NavFooter({ currentPage, handlePageChange }) {
           rel="noopener noreferrer"
           alt="stack overflow"
         >
-          stack overflow
+          <FontAwesomeIcon icon={['fab', 'stack-overflow']} size={'2x'}/>
         </a>
       </li>
     </ul>
