@@ -8,7 +8,6 @@
   height: 170px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 30px;
-  display: contents;
   flex-wrap: nowrap !important;
   overflow: auto;
 }
