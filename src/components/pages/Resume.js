@@ -50,7 +50,7 @@ export default function Resume() {
     >
       <h1 style={styles.sectionStyles}>Resume</h1>
         <h5 style={styles.sectionStyles}>
-          Download my resume&nbsp;
+          Download my&nbsp;
           <a 
             href={myResume} 
             download='myResume' 
@@ -58,7 +58,7 @@ export default function Resume() {
             rel='noopener noreferrer'
             textDecoration='none'
           >
-            here
+            resume
           </a>.
         </h5>
 
