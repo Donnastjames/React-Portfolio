@@ -29,6 +29,7 @@ export default function Portfolio() {
               imageSrc={kidsCornerImage}
               altImage="Kids Corner"
               linkPath="https://github.com/Donnastjames/Project-1"
+              githubLink="https://github.com/Donnastjames/"
             />
           </Col>
           <Col>
