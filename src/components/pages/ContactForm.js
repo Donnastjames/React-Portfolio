@@ -123,6 +123,9 @@ function ContactForm() {
               name="userName"
               onChange={handleInputChange}
               type="text"
+              onBlur={() => setErrorMessage(
+                userName ? '' : 'Name is required'
+              )}
             />
           </label>
           <br />
@@ -133,6 +136,9 @@ function ContactForm() {
               name="email"
               onChange={handleInputChange}
               type="email"
+              onBlur={() => setErrorMessage(
+                email ? '' : 'Email is required'
+              )}
             />
           </label>
           <br />

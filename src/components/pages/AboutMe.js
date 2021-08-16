@@ -33,7 +33,7 @@ export default function AboutMe() {
   }, [window.innerHeight]);
 
   return (
-    <div ref={ref} style={{ position: 'fixed', top: '115px', height: `${windowHeight - 235}px`, overflow: 'auto' }}>
+    <div ref={ref} style={{ position: 'fixed', top: '126px', height: `${windowHeight - 235}px`, overflow: 'auto' }}>
       <div style={styles.sectionStyles}>
         <h1>About Me</h1>
         <img style={styles.photoStyle} src={myPhoto} alt="My Photo" />
