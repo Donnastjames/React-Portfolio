@@ -41,13 +41,14 @@ export default function Resume() {
       ref={ref}
       style={{ 
         position: 'fixed', 
-        top: '150px',
+        top: '128px',
         left: '30px',
-        width: `${windowWidth - 45}px`,
-        height: `${windowHeight - 300}px`, 
+        width: `${windowWidth - 29}px`,
+        height: `${windowHeight - 205}px`, 
         overflow: 'auto'
       }}
     >
+      &nbsp;
       <h1 style={styles.sectionStyles}>Resume</h1>
         <h5 style={styles.sectionStyles}>
           Download my&nbsp;

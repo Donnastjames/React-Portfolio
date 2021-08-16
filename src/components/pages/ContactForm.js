@@ -103,13 +103,15 @@ function ContactForm() {
         ref={ref}
         style={{
           position: 'fixed',
-          top: '160px',
+          top: '128px',
           left: '30px',
-          width: `${windowWidth - 45}px`,
-          height: `${windowHeight - 235}px`,
-          overflow: 'auto'
+          width: `${windowWidth - 30}px`,
+          height: `${windowHeight - 205}px`,
+          overflowX: 'hidden',
+          overflowY: 'auto',
         }}
       >
+        &nbsp;
         <h1 style={styles.sectionStyles}>Contact</h1>
         <form
           style={{ ...styles.sectionStyles, width: `${windowWidth}px` }}
