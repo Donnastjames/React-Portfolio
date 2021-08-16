@@ -8,6 +8,7 @@ const styles = {
   sectionStyles: {
     fontFamily: 'Georgia, Times New Roman, Times, serif',
     textDecoration: 'none',
+    color: 'cadetblue',
   },
 };
 
@@ -23,6 +24,8 @@ export default function Project(props) {
         target="_blank"
         rel="noopener noreferrer"
         style={styles.sectionStyles}
+        onMouseOver={e => e.target.style.color = 'blue'}
+        onMouseOut={e => e.target.style.color = 'cadetblue'}
       >
         <h4>
           {title}&nbsp;
@@ -31,6 +34,7 @@ export default function Project(props) {
             target="_blank"
             rel="noopener noreferrer"
             alt="github"
+            style={{ color: 'cadetblue' }}
           >
             <FontAwesomeIcon icon={['fab', 'github']} size={'10px'}/>
           </a>

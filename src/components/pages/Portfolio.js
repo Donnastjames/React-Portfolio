@@ -28,8 +28,8 @@ export default function Portfolio() {
               title="Kids Corner"
               imageSrc={kidsCornerImage}
               altImage="Kids Corner"
-              linkPath="https://github.com/Donnastjames/Project-1"
-              githubLink="https://github.com/Donnastjames/"
+              linkPath="https://donnastjames.github.io/Project-1/"
+              githubLink="https://github.com/Donnastjames/Project-1"
             />
           </Col>
           <Col>
@@ -37,7 +37,8 @@ export default function Portfolio() {
               title="Gift List"
               imageSrc={giftList}
               altImage="Gift List"
-              linkPath="https://github.com/Donnastjames/Project-2-Gift-List"
+              linkPath="https://project-2-gift-list.herokuapp.com/"
+              githubLink="https://github.com/Donnastjames/Project-2-Gift-List"
             />
           </Col>
           <Col>
@@ -45,18 +46,20 @@ export default function Portfolio() {
               title="Budget Tracker"
               imageSrc={budgetTracker}
               altImage="Budget Tracker"
-              linkPath="https://github.com/Donnastjames/PWA-BudgetTracker"
+              linkPath="https://young-shore-00278.herokuapp.com/"
+              githubLink="https://github.com/Donnastjames/PWA-BudgetTracker"
             />
           </Col>
         </Row>
 
         <Row xs={1} med={2} lg={3}>
           <Col>
-          <Project
+            <Project
               title="Workout Tracker"
               imageSrc={workoutTracker}
               altImage="Workout Tracker"
-              linkPath="https://github.com/Donnastjames/Workout-Tracker"
+              linkPath="https://agile-coast-29548.herokuapp.com/"
+              githubLink="https://github.com/Donnastjames/Workout-Tracker"
             />
           </Col>
           <Col>
@@ -64,7 +67,8 @@ export default function Portfolio() {
               title="Tech Blog"
               imageSrc={techBlog}
               altImage="Tech Blog"
-              linkPath="https://github.com/Donnastjames/Tech_Blog"
+              linkPath="https://mvc-cms-style-tech-blog.herokuapp.com/"
+              githubLink="https://github.com/Donnastjames/Tech_Blog"
             />
           </Col>
           <Col>
@@ -72,7 +76,8 @@ export default function Portfolio() {
               title="Weather Dashboard"
               imageSrc={weatherDashboard}
               altImage="Weather Dashboard"
-              linkPath="https://github.com/Donnastjames/Weather-Dashboard"
+              linkPath="https://donnastjames.github.io/Weather-Dashboard/"
+              githubLink="https://github.com/Donnastjames/Weather-Dashboard"
             />
           </Col>
         </Row>
